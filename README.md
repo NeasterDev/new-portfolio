@@ -1,1 +1,3 @@
-# new-portfolio
+# Nicholas Easter
+
+- Software Developer

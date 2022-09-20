@@ -1,7 +1,14 @@
+* {
+    --bg-color-1: blue;
+    --bg-color-2: lightblue;
+    padding: 0;
+    margin: 0;
+}
+/* use these for making sections auto-scroll/achor to the div */
 .scroll-container,
 .scroll-area {
     max-width: 100%;
-    height: 75vh;
+    height: 100vh;
     font-size: 10rem;
 }
 
@@ -14,6 +21,47 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     scroll-snap-align: start;
 }
+/* end scroll section */
+
+/* nav bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-color-1);
+    border-bottom: 3px solid black;
+    position: fixed;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li, nav ul li button a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--bg-color-2);
+}
+
+#nav-title {
+    font-size: 1.7em;
+    margin: auto 0;
+    color: var(--bg-color-2);
+    cursor: pointer;
+}
+
+.nav-link {
+    background-color: var(--bg-color-1);
+    border: none;
+    padding: 1rem;
+}
+
+.nav-link:hover, nav ul li button a:hover {
+    color: var(--bg-color-1);
+    background-color: var(--bg-color-2);
+    cursor: pointer;
+}
+
+/* end nav bar */
