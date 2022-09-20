@@ -1,4 +1,5 @@
 import React from "react";
+import { About } from "./About";
 
 export class Home extends React.Component {
 
@@ -6,13 +7,15 @@ export class Home extends React.Component {
         return (
             <div className="scroll-container">
                 {/* about section */}
-                <section className="scroll-area">about</section><hr/>
+                <section id="about" className="scroll-area">
+                    <About />
+                </section><hr/>
                 {/* Projects section */}
-                <section className="scroll-area">projects</section><hr/>
+                <section id="projects" className="scroll-area">projects</section><hr/>
                 {/* contact me section */}
-                <section className="scroll-area">contact me</section><hr/>
+                <section id="contact" className="scroll-area">contact me</section><hr/>
                 {/* resume/contact information section */}
-                <section className="scroll-area">resume/contact information</section>
+                <section id="resume" className="scroll-area">resume/contact information</section>
             </div>
         )
     }
